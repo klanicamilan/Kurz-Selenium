@@ -1,0 +1,96 @@
+{
+  "id": "fee8fdc5-c3f7-4ad2-aa44-195b1a8b4299",
+  "version": "2.0",
+  "name": "P01_Prihlasenie_Odhlasenie",
+  "url": "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login",
+  "tests": [{
+    "id": "233a57bc-c628-44d3-b336-cc9853524560",
+    "name": "T001_HR_IS_Prihlasenie_Odhlasenie_2",
+    "commands": [{
+      "id": "009b9453-57d2-4af5-95d7-648af74f186f",
+      "comment": "",
+      "command": "open",
+      "target": "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8c25bd84-1e35-40a3-bd50-b774b3787864",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1103x965",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2ebd16e0-e231-427a-bdc2-3a80ef00b98b",
+      "comment": "",
+      "command": "executeScript",
+      "target": "const u=document.querySelector('[name=\"username\"]');u.value='Admin';u.dispatchEvent(new Event('input',{bubbles:true}));",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "87d0d12b-df70-4da9-a2ff-df9a805749a9",
+      "comment": "",
+      "command": "executeScript",
+      "target": "const p=document.querySelector('[name=\"password\"]');p.value='admin123';p.dispatchEvent(new Event('input',{bubbles:true}));",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ea28d4d9-75f6-4536-85e9-55c099c064bf",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[@type='submit']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "377dcf8d-7266-4347-ab06-c402c44029ff",
+      "comment": "",
+      "command": "click",
+      "target": "css=.bi-caret-down-fill",
+      "targets": [
+        ["css=.bi-caret-down-fill", "css:finder"],
+        ["xpath=//div[@id='app']/div/div/header/div/div[3]/ul/li/span/i", "xpath:idRelative"],
+        ["xpath=//span/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fab21489-e3d6-466d-b1f1-538b69e1269f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Logout",
+      "targets": [
+        ["linkText=Logout", "linkText"],
+        ["css=li:nth-child(4) > .oxd-userdropdown-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Logout')]", "xpath:link"],
+        ["xpath=//div[@id='app']/div/div/header/div/div[3]/ul/li/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/web/index.php/auth/logout')]", "xpath:href"],
+        ["xpath=//li/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Logout')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fc32ab1c-265e-492c-b012-6d8dde7fab1e",
+      "comment": "",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6427015d-47f2-425d-9c7c-868882325eac",
+      "comment": "",
+      "command": "echo",
+      "target": "Test uspesny",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "450bfb17-af13-4b9e-83f1-b3fde3a9e33f",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["233a57bc-c628-44d3-b336-cc9853524560"]
+  }],
+  "urls": ["https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"],
+  "plugins": []
+}
