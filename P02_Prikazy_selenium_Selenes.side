@@ -1,0 +1,156 @@
+{
+  "id": "af22e086-953e-40cd-8615-e28e8368d108",
+  "version": "2.0",
+  "name": "P02_Prikazy_selenium_Selenes",
+  "url": "https://www.upsvr.gov.sk/",
+  "tests": [{
+    "id": "29927bad-d221-4945-acc7-258cb09ae9b5",
+    "name": "TC_001_Otvorenie_Web_Stranok",
+    "commands": [{
+      "id": "7d8a196c-86f3-44bd-8386-8f4a92f8e0e8",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.google.sk",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e97b7f73-34fc-4946-933a-eee6982556fa",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.facebook.com",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c60afcfd-9e58-494f-8172-29f7baa5995e",
+      "comment": "",
+      "command": "open",
+      "target": "http://www.slovensko.sk/sk/titulna-stranka",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "92c4042f-67f0-48ff-835c-9752d5ca4c42",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.selenium.dev/",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "bfb585ab-1d7a-4c8c-ad32-a0c948cb5d6c",
+    "name": "TC_002_Cakanie_Element_Wait",
+    "commands": [{
+      "id": "aff8e26e-8520-4641-b324-1d61b4735801",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.slovensko.sk/sk/titulna-stranka",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5ce8f0ad-28e1-40a8-873e-a1f6323c1e83",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=#logo > img",
+      "targets": [
+        ["css=#logo > img", "css:finder"],
+        ["xpath=//img[@alt='Ústredný portál verejných služieb ľuďom']", "xpath:img"],
+        ["xpath=//a[@id='logo']/img", "xpath:idRelative"],
+        ["xpath=//a/img", "xpath:position"]
+      ],
+      "value": "3000"
+    }, {
+      "id": "3c52b0a2-9391-43ea-89af-dc152e251ac7",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.upsvr.gov.sk/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b4f376b9-11f1-44af-b8ec-ea9c5c68bb7d",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=a > .float_left",
+      "targets": [
+        ["css=a > .float_left", "css:finder"],
+        ["xpath=//img[@alt='Ústredie práce, sociálnych vecí a rodiny']", "xpath:img"],
+        ["xpath=//div[@id='logo_inner']/a/img", "xpath:idRelative"],
+        ["xpath=//a/img", "xpath:position"]
+      ],
+      "value": "2000"
+    }, {
+      "id": "b07dbf39-7a0c-4611-9c44-b291c011b240",
+      "comment": "",
+      "command": "echo",
+      "target": "Test uspešný",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "26865245-1c98-4895-9cf4-578722a319ea",
+    "name": "TC_003_Cakanie_Element_Wait_Visible",
+    "commands": [{
+      "id": "2e501d48-dbb8-464a-8ac8-b22bb81d8fb9",
+      "comment": "",
+      "command": "//Moja poznámka Zaciatok testu",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "58380216-cc4a-4835-9167-90edd19361b9",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.alza.sk",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8581d7d4-2e65-4322-8ddd-bba963ef474f",
+      "comment": "",
+      "command": "//waitForElementVisible",
+      "target": "css=#logo > img",
+      "targets": [],
+      "value": "3000"
+    }, {
+      "id": "145f9616-f022-4100-b129-24c05f621247",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.upsvr.gov.sk/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "44d1761b-00ec-4277-a07e-24cf765f9d52",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=a > .float_left",
+      "targets": [
+        ["css=a > .float_left", "css:finder"],
+        ["xpath=//img[@alt='Ústredie práce, sociálnych vecí a rodiny']", "xpath:img"],
+        ["xpath=//div[@id='logo_inner']/a/img", "xpath:idRelative"],
+        ["xpath=//a/img", "xpath:position"]
+      ],
+      "value": "2000"
+    }, {
+      "id": "56cc250a-b19d-4d8a-9bb4-43bc0fa3b181",
+      "comment": "",
+      "command": "echo",
+      "target": "Test uspešný",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6bc3afc8-450b-4dde-813f-41bb496749db",
+      "comment": "",
+      "command": "//Moja poznámka KONIEC testu",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "d0fbf92b-d54d-4ce8-9f1e-55e6b8330e20",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["29927bad-d221-4945-acc7-258cb09ae9b5"]
+  }],
+  "urls": ["https://www.google.sk/", "https://www.upsvr.gov.sk/"],
+  "plugins": []
+}
